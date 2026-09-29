@@ -29,8 +29,8 @@ Mental model of traffic flow
 
   Mental architectural mapping of Cell based architetcure.
   --------------------------------------------------------
-
-  ┌─────────────────────────────────────────────────────────────────────────────┐
+  ```text
+┌─────────────────────────────────────────────────────────────────────────────┐
 │ EKS Cluster (Domain Cell)                                                   │
 │                                                                             │
 │  ┌────────────────────────┐  ┌────────────────────────┐                    │
@@ -43,12 +43,13 @@ Mental model of traffic flow
 │  │ Service Mesh & Platform Layer                                         │  │
 │  ├──────────────────────┬──────────────────────┬────────────────────────┤  │
 │  │ ns: cell-fabric      │ ns: tyk              │ ns: harness-delegate   │  │
-│  │ - Cell Operator     │ - Tyk Data Plane     │ - Harness Delegate     │  │
+│  │ - Cell Operator      │ - Tyk Data Plane     │ - Harness Delegate     │  │
 │  │ - Istio Control Plane│   (tyk-dp)           │   (Connects to         │  │
 │  │ - OTEL Collector     │ - Tyk Pump           │    Harness SaaS)       │  │
 │  │                      │ - Tyk Gateway        │                        │  │
 │  └──────────────────────┴──────────────────────┴────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────────────────┘
+
 
 Component Analysis & Roles :
 ------------------------------------
