@@ -12,6 +12,7 @@ Why cell?
 
 Mental model of traffic flow
 -----------------------------
+```text
 
 [ Client / Internet ]
          │
